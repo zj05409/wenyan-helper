@@ -1,0 +1,1 @@
+const fs=require("fs");const scriptContent=fs.readFileSync("scripts/fetchWenyanWord.js","utf8");const fixedContent=scriptContent.replace(/examples.push\(`\${bookTitle}\："(\${exampleText})"\`\);/g,"examples.push(`${bookTitle}：\"${exampleText}\"`);");fs.writeFileSync("scripts/fetchWenyanWord_fixed.js",fixedContent,"utf8");console.log("修复完成");

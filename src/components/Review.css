@@ -1,0 +1,121 @@
+.review-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+.review-list {
+    margin-bottom: 30px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e6f7ff;
+}
+
+.review-character {
+    font-size: 32px;
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.review-info {
+    flex: 1;
+}
+
+.review-pinyin {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.review-stage {
+    font-size: 14px;
+    color: #1890ff;
+}
+
+.review-next {
+    font-size: 14px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #666;
+}
+
+.review-empty {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.review-empty p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.back-to-library {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #1890ff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-library:hover {
+    background-color: #096dd9;
+}
+
+.review-tips {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.review-tips h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-tips ul {
+    padding-left: 20px;
+}
+
+.review-tips li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
