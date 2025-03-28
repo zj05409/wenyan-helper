@@ -1,0 +1,13 @@
+{
+    "name": "wenyan-scraper",
+    "version": "1.0.0",
+    "description": "爬取文言文字典数据的工具",
+    "private": true,
+    "scripts": {
+        "fetch": "node fetchWenyanWord.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.2",
+        "cheerio": "^1.0.0-rc.12"
+    }
+}

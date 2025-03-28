@@ -1,0 +1,1 @@
+const fs = require('fs'); const content = fs.readFileSync('scripts/fetchWenyanWord.js', 'utf8'); fs.writeFileSync('scripts/fetchWenyanWord_manual_fix.js', content, 'utf8'); console.log('文件已复制，请手动编辑');

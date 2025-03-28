@@ -1,0 +1,119 @@
+.dev-tools {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    transform: translateY(calc(100% + 20px));
+    transition: transform 0.3s ease;
+}
+
+.dev-tools.open {
+    transform: translateY(0);
+}
+
+.dev-tools-toggle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.dev-tools-toggle:hover {
+    background-color: #2980b9;
+}
+
+.dev-tools-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dev-tools-section {
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 15px;
+}
+
+.dev-tools-section:last-child {
+    border-bottom: none;
+}
+
+.dev-tools-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #2d3748;
+}
+
+.date-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.current-date {
+    font-size: 14px;
+    color: #718096;
+}
+
+.clear-progress-btn {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.clear-progress-btn:hover {
+    background-color: #c0392b;
+}
+
+.reset-date-btn {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+.reset-date-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .dev-tools {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .dev-tools-toggle {
+        top: -40px;
+        border-radius: 12px 12px 0 0;
+    }
+}

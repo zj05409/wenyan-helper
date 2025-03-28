@@ -1,0 +1,94 @@
+{
+  "name": "wenyan-helper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/pinyin": "^2.10.2",
+    "pinyin": "^4.0.0-alpha.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.30.0",
+    "segmentit": "^2.0.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "electron:dev": "concurrently \"cross-env BROWSER=none npm run dev\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development electron .\"",
+    "electron:build": "npm run build && electron-builder",
+    "electron:build:mac": "npm run build && electron-builder --mac",
+    "electron:build:win": "npm run build && electron-builder --win",
+    "electron:build:linux": "npm run build && electron-builder --linux",
+    "electron:build:all": "npm run build && electron-builder --mac --win --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.1",
+    "vite": "^5.0.10",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.wenyanhelper.app",
+    "productName": "wenyan-helper",
+    "directories": {
+      "output": "release",
+      "buildResources": "public"
+    },
+    "files": [
+      "build/**/*",
+      "electron/**/*"
+    ],
+    "extraMetadata": {
+      "main": "electron/main.cjs"
+    },
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "public/logo512.png"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "public/logo512.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "tar.gz"
+      ],
+      "category": "Education",
+      "icon": "public/logo512.png"
+    }
+  }
+}

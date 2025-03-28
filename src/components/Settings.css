@@ -1,0 +1,140 @@
+.settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.settings-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.settings-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.settings-section h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1890ff;
+}
+
+.reset-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button.danger {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+button.danger:hover {
+    background-color: #cf1322;
+}
+
+.confirm-reset {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff1f0;
+    border: 1px solid #ffccc7;
+    border-radius: 4px;
+}
+
+.confirm-reset p {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.confirm-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.confirm-buttons button {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.debug-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.date-setter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.date-setter label {
+    font-size: 14px;
+}
+
+.date-setter input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.date-setter button {
+    padding: 8px 15px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.current-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
